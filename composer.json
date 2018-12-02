@@ -9,6 +9,9 @@
       "email": "cbowen@msu.edu"
     }
   ],
+  "require" : {
+    "cl/survey": "^2.0"
+  },
   "autoload":{
     "psr-4": {
       "CL\\MSU\\SIRS\\": "src/SIRS"
