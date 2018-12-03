@@ -1,0 +1,163 @@
+
+body {
+  max-width: 540pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  display: none;
+}
+
+div.content > div.cl-survey {
+  margin: 0;
+
+  h1 {
+    text-align: center;
+    font-size: 14pt;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 12pt;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  p.top {
+    font-weight: bold;
+  }
+
+  p.top span {
+    text-decoration: underline;
+  }
+
+  div.keybox {
+    float: right;
+    border: 1pt solid black;
+    margin-left: 5pt;
+  }
+
+  div.keybox ul {
+    padding-left: 5pt;
+    list-style: none;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  p.comment {
+    border: 1pt black solid;
+  }
+
+  hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+  }
+
+  p.reporthead {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  table.stats {
+    width: 100%;
+    border: 2pt black solid;
+    border-collapse: collapse;
+    background: white;
+
+    tr {
+      background: white;
+    }
+
+    th, tr:first-child th {
+      background: #AAAAAA;
+      border: 1pt black solid;
+    }
+
+    td {
+      border: 1pt black solid;
+      text-align: center;
+    }
+
+    th.lefthead {
+       text-align: left;
+    }
+
+  }
+}
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    display: none;
+  }
+
+  div.cl-survey {
+
+    div.stats {
+      margin-left: 0.5in;
+      margin-right: 0.5in;
+    }
+
+    p.reporthead {
+      margin-top: 1in;
+    }
+
+    hr {
+      height: 0pt;
+      color: white;
+      background-color: white;
+      border: none;
+    }
+
+    p {
+      font-family: arial, sans-serif;
+      font-size: 10pt;
+    }
+
+    li {
+      font-family: arial, sans-serif;
+      font-size: 10pt;
+    }
+
+    p.top {
+      font-family: arial, sans-serif;
+      font-weight: bold;
+      font-size: 10pt;
+      page-break-before: always;
+    }
+
+    h1 {
+      font-size: 12pt;
+    }
+
+    h2 {
+      font-size: 10pt;
+    }
+
+  }
+}
+
